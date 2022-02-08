@@ -9,14 +9,14 @@ const express = require('express');
 const bodyParser = require('body-parser')
 require('./db/mongoose')
 const userRouter = require('./routers/user')
-const dotent = require('dotenv')
-Dotenv.config({path: './.env'})
+const dotenv = require('dotenv')
+dotenv.config()
 
 
 const app = express();
 
-// const port = process.env.PORT || 3000
-const port = 2022
+const port = process.env.PORT || 2022
+// const port = 2022
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -33,4 +33,4 @@ app.listen(port, () => {
 })
 
 
-module.exports = app;
+module.exports = app

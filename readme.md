@@ -24,12 +24,14 @@
 
 ### set up:
 * run npm install
-* create a dotenv for the following variables: 
+* create a dotenv file in the root folder and add the following variables: 
       mongoUri
       jwtSecret
 
+      you can get your mongodb connection string from mongodb website
+
 ## For the profile routes to work, you have to copy the token and paste in this format
-      Authorization Bearer <token>
+      Authorization Bearer <paste the token copied here and omit the angle backets>
       the same applies for the logout route too.
 
 
